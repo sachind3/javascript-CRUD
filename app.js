@@ -21,6 +21,7 @@ function submitForm(e) {
     } else {
     }
     resetForm();
+    submitBtn.innerHTML = 'Submit'
 }
 
 function readFormData() {
@@ -99,7 +100,6 @@ function showTable() {
     } else {
         table.innerHTML = `<tr><td colspan="4">No data found</td></tr>`
     }
-    submitBtn.innerHTML = 'Submit'
 }
 function onDelete(index) {
     let info = localStorage.getItem('info');
