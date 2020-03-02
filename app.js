@@ -99,7 +99,7 @@ function showTable() {
     } else {
         table.innerHTML = `<tr><td colspan="4">No data found</td></tr>`
     }
-    console.log(infoData)
+    submitBtn.innerHTML = 'Submit'
 }
 function onDelete(index) {
     let info = localStorage.getItem('info');
