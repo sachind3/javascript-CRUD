@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <div class="row">
+        <div class="col">
+            <form id="empForm" autocomplete="off">
+                <div>
+                    <label for="">Full Name</label>
+                    <input type="text" id="userName">
+                </div>
+                <div>
+                    <label for="">Emp Code</label>
+                    <input type="text" id="userCode">
+                </div>
+                <div>
+                    <label for="">Emp Salary</label>
+                    <input type="text" id="userSalary">
+                </div>
+                <div>
+                    <button type="submit" id="submitBtn">Submit</button>
+                    <button type="button" id="resetBtn">Reset</button>
+                </div>
+            </form>
+        </div>
+        <div class="col">
+            <table id="table" width="100%" cellpadding="0" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Full Name</th>
+                        <th>Emp Code</th>
+                        <th>Salary</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
