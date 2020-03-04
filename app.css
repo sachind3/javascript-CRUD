@@ -11,59 +11,111 @@ body {
     height: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
     font-size: 14px;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.235;
-    color: #232323;
     padding: 1rem;
-    background: #f5f5f5;
 }
 
-.row {
-    display: flex;
-}
-
-.col {
-    width: 50%;
-    border: 1px solid #ddd;
-    border-collapse: collapse;
-    padding: 1rem;
-    background: #fff;
-}
-
-.col input {
-    width: 100%;
-    border: 1px solid #ddd;
+.container {
     padding: 0 1rem;
-    height: 2.4rem;
+    max-width: 1170px;
+    margin: 0 auto;
 }
 
-form div {
-    margin-bottom: 1rem;
-}
-
-form div:last-child {
-    margin-bottom: 0
-}
-
-form div label {
-    margin-bottom: 0.4rem;
-    display: block;
-}
-
-button {
-    padding: 0 1rem;
-    height: 2.4rem;
-}
 
 table {
+    width: 100%;
     border-collapse: collapse;
+}
+
+table th {
+    background: #232323;
+    color: #fff;
 }
 
 table th,
 table td {
     border: 1px solid #ddd;
-    padding: 0.5rem 0.5rem;
+    padding: 0.5rem;
     text-align: left;
+}
+
+table td:first-child {
+    text-transform: capitalize;
+}
+
+form#myForm {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -0.5rem;
+}
+
+.formGroup {
+    margin-bottom: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    width: 33.33%;
+    padding: 0 0.5rem;
+}
+
+.formGroup label {
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+}
+
+.formGroup input,
+.formGroup select {
+    height: 2.2rem;
+    padding: 0 0.8rem;
+    border: 1px solid #ddd;
+}
+
+.searchBox input {
+    height: 2.2rem;
+    padding: 0 0.8rem;
+    border: 1px solid #ddd;
+}
+
+.btnGroup {
+    display: flex;
+    justify-content: left;
+    padding: 0 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.btnGroup button {
+    margin-right: 0.5rem;
+    height: 2.2rem;
+    padding: 0 0.8rem;
+    border: 1px solid #232323;
+    cursor: pointer;
+    background: #232323;
+    color: #fff;
+}
+
+.radioGroup {
+    display: flex;
+    align-items: center;
+    margin-right: 0.8rem;
+}
+
+.radioPanel {
+    display: flex;
+}
+
+.radioGroup input {
+    margin-right: 0.2rem;
+}
+
+.tablePanel {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

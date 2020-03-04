@@ -10,40 +10,69 @@
 </head>
 
 <body>
-    <div class="row">
-        <div class="col">
-            <form id="empForm" autocomplete="off">
-                <div>
-                    <label for="">Full Name</label>
-                    <input type="text" id="userName">
+    <div class="container">
+        <form id="myForm">
+            <div class="formGroup">
+                <label for="userName">Name</label>
+                <input type="text" id="userName">
+            </div>
+            <div class="formGroup">
+                <label for="userEmail">Email</label>
+                <input type="text" id="userEmail">
+            </div>
+            <div class="formGroup">
+                <label for="userPhone">Phone</label>
+                <input type="text" id="userPhone">
+            </div>
+            <div class="formGroup">
+                <label for="userGender">Gender</label>
+                <div class="radioPanel">
+                    <label for="male" class="radioGroup"><input type="radio" id="male" value="male" name="gender">
+                        Male</label>
+                    <label for="female" class="radioGroup"><input type="radio" id="female" value="female" name="gender">
+                        Female</label>
                 </div>
-                <div>
-                    <label for="">Emp Code</label>
-                    <input type="text" id="userCode">
-                </div>
-                <div>
-                    <label for="">Emp Salary</label>
-                    <input type="text" id="userSalary">
-                </div>
-                <div>
-                    <button type="submit" id="submitBtn">Submit</button>
-                    <button type="button" id="resetBtn">Reset</button>
-                </div>
-            </form>
+            </div>
+            <div class="formGroup">
+                <label for="userDOB">DOB</label>
+                <input type="date" id="userDOB">
+            </div>
+            <div class="formGroup">
+                <label for="userRole">Role</label>
+                <select id="userRole">
+                    <option>Select Role</option>
+                </select>
+            </div>
+            <div class="btnGroup">
+                <button type="submit" id="submitBtn">Submit</button>
+                <button type="button" id="resetBtn">Reset</button>
+            </div>
+        </form>
+        <hr>
+        <br>
+        <div class="tablePanel">
+            <div class="entriesBox">
+                Total entries: <span id="rowCounts"></span>
+            </div>
+            <div class="searchBox">
+                <input type="text" placeholder="Search .." id="searchInput">
+            </div>
         </div>
-        <div class="col">
-            <table id="table" width="100%" cellpadding="0" cellspacing="0">
-                <thead>
-                    <tr>
-                        <th>Full Name</th>
-                        <th>Emp Code</th>
-                        <th>Salary</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody></tbody>
-            </table>
-        </div>
+        <table cellpadding="0" cellspacing="0" border="0">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Gender</th>
+                    <th>DOB</th>
+                    <th>Role</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+        </table>
     </div>
     <script src="app.js"></script>
 </body>
